@@ -233,7 +233,7 @@ function App() {
       {/* Navigation */}
       <nav>
         <a href="#" className="logo">
-          <img src="/assets/logo.png" alt="MuscleUp Logo" className="logo-img" />
+          <img src="./assets/logo.png" alt="MuscleUp Logo" className="logo-img" />
         </a>
         <div className="nav-links">
           <a href="#waitlist" className="btn btn-secondary" style={{ fontSize: '0.8rem', padding: '8px 16px' }}>{t('nav_waitlist')}</a>
@@ -311,7 +311,7 @@ function App() {
                 >
                   <div className="dynamic-island"></div>
                   <div className="phone-screen">
-                    <img src="/assets/workout-screen.png" alt="Workout Screen" />
+                    <img src="./assets/workout-screen.png" alt="Workout Screen" />
                   </div>
                   <div className="phone-glass"></div>
                 </motion.div>
@@ -332,7 +332,7 @@ function App() {
                 >
                   <div className="dynamic-island"></div>
                   <div className="phone-screen">
-                    <img src="/assets/analytics-screen.png" alt="Analytics Screen" />
+                    <img src="./assets/analytics-screen.png" alt="Analytics Screen" />
                   </div>
                   <div className="phone-glass"></div>
                 </motion.div>
@@ -353,7 +353,7 @@ function App() {
                 >
                   <div className="dynamic-island"></div>
                   <div className="phone-screen">
-                    <img src="/assets/analytics-screen2.png" alt="Progress Export Screen" />
+                    <img src="./assets/analytics-screen2.png" alt="Progress Export Screen" />
                   </div>
                   <div className="phone-glass"></div>
                 </motion.div>
@@ -374,7 +374,7 @@ function App() {
                 >
                   <div className="dynamic-island"></div>
                   <div className="phone-screen">
-                    <img src="/assets/workout-screen2.png" alt="Tailored Plan Screen" />
+                    <img src="./assets/workout-screen2.png" alt="Tailored Plan Screen" />
                   </div>
                   <div className="phone-glass"></div>
                 </motion.div>
