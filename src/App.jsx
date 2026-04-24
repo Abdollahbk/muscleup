@@ -542,7 +542,7 @@ function App() {
               variants={itemVariants}
               style={{ display: 'flex', gap: '40px', justifyContent: 'center', flexWrap: 'wrap' }}
             >
-              {['/assets/analytics-screen.png', '/assets/workout-screen.png'].map((src, i) => (
+              {['./assets/analytics-screen.png', './assets/workout-screen.png'].map((src, i) => (
                 <motion.div
                   key={i}
                   className="phone-3d-wrapper"
