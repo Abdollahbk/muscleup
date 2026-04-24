@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 import { motion, useScroll, useTransform, useMotionValue, useSpring, AnimatePresence } from 'framer-motion';
 import { Brain, Activity, Dumbbell, Map, LineChart, Cloud, Shield, Zap, RefreshCw, CheckCircle2, Lock } from 'lucide-react';
 import { LanguageProvider, useLanguage } from './i18n/LanguageContext';
+import WaitlistModal from './components/WaitlistModal';
 import './index.css';
 import './App.css';
 
@@ -125,6 +126,7 @@ function LangSwitcher() {
 
 function App() {
   const { t } = useLanguage();
+  const [isWaitlistOpen, setIsWaitlistOpen] = useState(false);
   const containerRef = useRef(null);
   const stickyRef = useRef(null);
   const heroRef = useRef(null);
@@ -236,7 +238,7 @@ function App() {
           <img src="./assets/logo.png" alt="MuscleUp Logo" className="logo-img" />
         </a>
         <div className="nav-links">
-          <a href="#waitlist" className="btn btn-secondary" style={{ fontSize: '0.8rem', padding: '8px 16px' }}>{t('nav_waitlist')}</a>
+          <button className="btn btn-secondary" style={{ fontSize: '0.8rem', padding: '8px 16px' }} onClick={() => setIsWaitlistOpen(true)}>{t('nav_waitlist')}</button>
           <LangSwitcher />
         </div>
       </nav>
@@ -258,7 +260,7 @@ function App() {
                 <h1>{t('hero1_title')}<br /><span className="red-text">{t('hero1_accent')}</span></h1>
                 <p>{t('hero1_sub')}</p>
                 <div className="hero-btns">
-                  <a href="#waitlist" className="btn btn-primary" onClick={(e) => e.preventDefault()}>{t('btn_waitlist')}</a>
+                  <button className="btn btn-primary" onClick={() => setIsWaitlistOpen(true)}>{t('btn_waitlist')}</button>
                   <LockedAppButton />
                 </div>
               </motion.div>
@@ -589,7 +591,7 @@ function App() {
             <motion.h2 variants={itemVariants}>{t('cta_title')}</motion.h2>
             <motion.p variants={itemVariants} style={{ color: 'var(--text-muted)', margin: '20px auto 40px' }}>{t('cta_sub')}</motion.p>
             <motion.div className="hero-btns" style={{ justifyContent: 'center' }} variants={itemVariants}>
-              <a href="#" className="btn btn-primary" onClick={(e) => e.preventDefault()}>{t('btn_waitlist')}</a>
+              <button className="btn btn-primary" onClick={() => setIsWaitlistOpen(true)}>{t('btn_waitlist')}</button>
               <LockedAppButton />
             </motion.div>
           </div>
@@ -617,6 +619,7 @@ function App() {
 
       </motion.div> {/* END CURTAIN PANEL */}
 
+      <WaitlistModal isOpen={isWaitlistOpen} onClose={() => setIsWaitlistOpen(false)} />
     </div>
   );
 }

@@ -90,6 +90,16 @@ export const translations = {
     cta_sub:   'MuscleUp is preparing to launch a smarter way to train, track, and improve.',
     footer_copy: 'MuscleUp © 2026',
     footer_email: '[email]', footer_ig: '[Instagram]', footer_web: '[website]',
+
+    // Waitlist Modal
+    modal_title: 'Join the Waitlist',
+    modal_desc: 'Be among the first to experience the future of AI fitness tracking.',
+    modal_input_placeholder: 'Enter your email address',
+    modal_submit: 'Join Now',
+    modal_success_title: 'Welcome to the club.',
+    modal_success_desc: 'We\'ll let you know the second we go live.',
+    modal_close: 'Return to Site',
+    modal_error: 'Something went wrong. Please try again.',
   },
 
   /* ─── FRENCH ──────────────────────────────────────────────────────── */
@@ -169,6 +179,16 @@ export const translations = {
     cta_sub:   "MuscleUp se prépare à lancer une façon plus intelligente de s'entraîner et de progresser.",
     footer_copy: 'MuscleUp © 2026',
     footer_email: '[email]', footer_ig: '[Instagram]', footer_web: '[site web]',
+
+    // Waitlist Modal
+    modal_title: 'Rejoindre la liste d\'attente',
+    modal_desc: 'Soyez parmi les premiers à découvrir le futur du suivi fitness par IA.',
+    modal_input_placeholder: 'Entrez votre adresse email',
+    modal_submit: 'Rejoindre',
+    modal_success_title: 'Bienvenue au club.',
+    modal_success_desc: 'Nous vous préviendrons dès le lancement officiel.',
+    modal_close: 'Retour au site',
+    modal_error: 'Une erreur est survenue. Veuillez réessayer.',
   },
 
   /* ─── ARABIC ──────────────────────────────────────────────────────── */
@@ -248,5 +268,15 @@ export const translations = {
     cta_sub:   'يستعد MuscleUp للإطلاق بطريقة أذكى للتدريب والتتبع والتحسين.',
     footer_copy: 'MuscleUp © 2026',
     footer_email: '[البريد الإلكتروني]', footer_ig: '[إنستغرام]', footer_web: '[الموقع]',
+
+    // Waitlist Modal
+    modal_title: 'انضم لقائمة الانتظار',
+    modal_desc: 'كن من أوائل المجربين لمستقبل تتبع اللياقة بالذكاء الاصطناعي.',
+    modal_input_placeholder: 'أدخل بريدك الإلكتروني',
+    modal_submit: 'انضم الآن',
+    modal_success_title: 'مرحباً بك في النادي.',
+    modal_success_desc: 'سنعلمك فور إطلاق التطبيق رسمياً.',
+    modal_close: 'العودة للموقع',
+    modal_error: 'حدث خطأ. يرجى المحاولة مرة أخرى.',
   },
 };
